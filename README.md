@@ -17,6 +17,15 @@ Simple TCP/IP implemented with support only for 10GbE on an FPGA (Field Programm
 
 ## History
 
+#### 2021-12-02 Ver.2.0
+
+* Reduced minimum IFG for reception from 12Byte to 4Byte
+* Reduced IFG during transmission from 74Byte (1518Byte packet) to 12Byte on average
+* Fixed a bug that transmission becomes abnormal after receiving RST
+* Removed timeout function before session establishment in client mode
+* Improved fast retransmission (reduced unnecessary retransmissions)
+* Added timeout at the end of session
+
 #### 2020-11-17 Ver.1.0
 
 * First release.
