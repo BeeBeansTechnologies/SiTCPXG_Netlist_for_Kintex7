@@ -17,6 +17,11 @@ Simple TCP/IP implemented with support only for 10GbE on an FPGA (Field Programm
 
 ## History
 
+#### 2023-01-04 Ver.3.0
+* Fixed the problem that the IP data length becomes abnormal when ACK reply and data transmission overlap.
+* Improved ACK response to include data in response packets if data is available, even if it does not reach the watermark.
+* Improved to disable Nagle timer on session disconnect.
+
 #### 2021-12-02 Ver.2.0
 
 * Reduced minimum IFG for reception from 12Byte to 4Byte

@@ -14,6 +14,7 @@
 //			20200917	---------	Created by BBT
 //			20201012	#20201014	Debaug for byte aline
 //			20210901	#20210901	Changed the core of SiTCP library to SiTCPXG_XC7V_128K_V2
+//			20210901	#20221024	Changed the core of SiTCP library to SiTCPXG_XC7V_128K_V3
 //
 //----------------------------------------------------------------------//
 module
@@ -122,7 +123,7 @@ module
 		.TIM_1S							(TIM_1S							)	// out	: 1 s interval
 	);
 
-	SiTCPXG_XC7K_128K_V2	SiTCP(		// #20210901
+	SiTCPXG_XC7K_128K_V3	SiTCP(		// #20221024
 		.REG_FPGA_VER					(REG_FPGA_VER[31:0]				),	// in	: User logic Version(For example, the synthesized date)
 		.REG_FPGA_ID					(REG_FPGA_ID[31:0]				),	// in	: User logic ID (We recommend using the lower 4 bytes of the MAC address.)
 		//		==== System I/F ====
